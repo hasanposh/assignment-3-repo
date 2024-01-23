@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hockeys</title>
+    <!-- fontawsome icons -->
+    <script
+      src="https://kit.fontawesome.com/6b0cbd5cf0.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind and Daisy UI -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom tailwind styles -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              red_color: "#FF4240",
+              dark2: "#424247",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- CSS styles -->
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-manrope">
+    <header class="container mx-auto">
+      <!-- navbar styles-->
+      <div class="my-4 lg:my-11">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost font-extrabold text-2xl lg:text-4xl"
+              >Hockey<span class="text-red_color -ml-1.5 -mr-2.5">’</span>s</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="text-red_color">Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <i
+              class="fa-solid fa-magnifying-glass hidden lg:flex mx-5 text-dark2"
+            ></i>
+            <a class="btn bg-red_color lg:text-xl text-white">Get Ticket</a>
+          </div>
+        </div>
+      </div>
+      <!-- Banner styles-->
+      <div
+        class="relative bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/cup.png)] bg-cover h-[200px] lg:h-[550px] bg-center m-2 lg:m-0 rounded-xl"
+      >
+        <!-- banner sticker -->
+        <div
+          class="absolute -bottom-44 lg:right-10 lg:bottom-10 h-40 lg:w-[550px] bg-black rounded-xl p-4 lg:p-8 space-y-2"
+        >
+          <h3 class="text-white font-extrabold text-lg lg:text-2xl">
+            Meet all the heroes from the field
+          </h3>
+          <p class="text-white opacity-70">
+            Ice hockey is a game between two teams who wear skates and compete
+            on an ice rink. Each team usually has six players
+          </p>
+        </div>
+        <!-- banner icons -->
+        <div class="absolute space-x-2 bottom-10 right-24 lg:left-10">
+          <i
+            class="fa-solid fa-chevron-left text-white text-center p-2 bg-black rounded-full h-8 w-8"
+          ></i>
+          <i
+            class="fa-solid fa-chevron-right text-white text-center p-2 bg-black rounded-full h-8 w-8"
+          ></i>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto mt-48 lg:mt-20">
+      <!-- hockeys club -->
+      <hr class="border-dashed mx-4 lg:mx-auto my-6 dark:bg-gray-400" />
+      <h3 class="text-4xl font-extrabold text-center">
+        Professional Hockeys Club
+      </h3>
+      <p class="text-center py-4 px-8 lg:py-6 lg:px-32">
+        Ice hockey is a game between two teams who wear skates and compete on an
+        ice rink. Each team usually has six players. The object is to propel the
+        puck past a goal line and into a net guarded by a goaltender.
+      </p>
+
+      <hr class="border-dashed mx-4 lg:mx-auto my-6 dark:bg-gray-400" />
+      <!-- progress section -->
+      <div class="flex flex-col lg:flex-row gap-5">
+        <!-- card 1 -->
+        <div class="card">
+          <figure class=" ">
+            <div
+              class="radial-progress text-red_color"
+              style="--value: 87"
+              role="progressbar "
+            >
+              <p class="text-black text-xl font-extrabold">87%</p>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-xl font-bold">Prayer Facility</h2>
+            <p class="opacity-80">
+              Ice hockey is a game between two teams who wear skates and compete
+              on an ice rink
+            </p>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card">
+          <figure class=" ">
+            <div
+              class="radial-progress text-green-400"
+              style="--value: 95"
+              role="progressbar "
+            >
+              <p class="text-black text-xl font-extrabold">95%</p>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-xl font-bold">Prayer Facility</h2>
+            <p class="opacity-80">
+              Ice hockey is a game between two teams who wear skates and compete
+              on an ice rink
+            </p>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card">
+          <figure class=" ">
+            <div
+              class="radial-progress text-amber-400"
+              style="--value: 90"
+              role="progressbar "
+            >
+              <p class="text-black text-xl font-extrabold">90%</p>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-xl font-bold">Prayer Facility</h2>
+            <p class="opacity-80">
+              Ice hockey is a game between two teams who wear skates and compete
+              on an ice rink
+            </p>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="card">
+          <figure class=" ">
+            <div
+              class="radial-progress text-blue-400"
+              style="--value: 80"
+              role="progressbar "
+            >
+              <p class="text-black text-xl font-extrabold">80%</p>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-xl font-bold">Prayer Facility</h2>
+            <p class="opacity-80">
+              Ice hockey is a game between two teams who wear skates and compete
+              on an ice rink
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- program section -->
+      <hr class="border-dashed mx-4 lg:mx-auto my-6 dark:bg-gray-400" />
+      <h3 class="text-4xl font-extrabold text-center">Program Sections</h3>
+      <p class="text-center py-4 px-8 lg:py-6 lg:px-32">
+        Ice hockey is a game between two teams who wear skates and compete on an
+        ice rink. Each team usually has six players. The object is to propel the
+        puck past a goal line and into a net guarded by a goaltender.
+      </p>
+      <hr class="border-dashed mx-4 lg:mx-auto my-6 dark:bg-gray-400" />
+
+      <!-- register now section -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mx-2">
+        <!-- card 1 -->
+        <div
+          class="bg-[url(./images/batball.png)] lg:h-[340px] bg-cover rounded-3xl bg-center"
+        >
+          <div
+            class="w-full h-full space-y-3 px-10 py-10 lg:pt-44 bg-black bg-opacity-40 rounded-3xl"
+          >
+            <h3 class="text-white font-extrabold text-3xl">Junior Program</h3>
+            <p class="text-white font-medium">
+              Ice hockey is a game between two teams who wear skates and compete
+              on an ice rink
+            </p>
+            <button class="btn border-none bg-red_color text-white">
+              Register Now!
+            </button>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div
+          class="bg-[url(./images/playing.png)] lg:h-[340px] bg-cover rounded-3xl bg-center"
+        >
+          <div
+            class="w-full h-full space-y-3 px-10 py-10 lg:pt-44 bg-black bg-opacity-40 rounded-3xl"
+          >
+            <h3 class="text-white font-extrabold text-3xl">Junior Program</h3>
+            <p class="text-white font-medium">
+              Ice hockey is a game between two teams who wear skates and compete
+              on an ice rink
+            </p>
+            <button class="btn border-none bg-red_color text-white">
+              Register Now!
+            </button>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div
+          class="lg:col-span-2 bg-[url(./images/playing2.png)] lg:h-[340px] bg-cover rounded-3xl bg-center"
+        >
+          <div
+            class="w-full h-full space-y-3 px-10 py-10 lg:pt-44 bg-black bg-opacity-40 rounded-3xl"
+          >
+            <h3 class="text-white font-extrabold text-3xl">Junior Program</h3>
+            <p class="text-white font-medium">
+              Ice hockey is a game between two teams who wear skates and compete
+              on an ice rink
+            </p>
+            <button class="btn border-none bg-red_color text-white">
+              Register Now!
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer section -->
+    <footer class="bg-[#131318]">
+      <div class="p-32 text-white text-center lg:text-start justify-around flex flex-col lg:flex-row">
+        <div class="flex-1/4 p-4">
+          <h3>Get In Touch</h3>
+          <p>Ice hockey is a game between two teams who wear skates</p>
+          <p>gmail</p>
+        <p>mobile</p>
+        </div>
+        
+        <div class="flex2/4 flex gap-32">
+          <div>
+            <h4>Company</h4>
+            <p>About us</p>
+            <p>Leadership</p>
+            <p>Careers</p>
+            <p>News & Article</p>
+            <p>Legal Notice</p>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <p>About us</p>
+            <p>Leadership</p>
+            <p>Careers</p>
+            <p>News & Article</p>
+            
+          </div>
+        </div>
+        <div class="flex-1/4">
+          <h4>Company</h4>
+            <p>About us</p>
+            <p>Leadership</p>
+            <p>Careers</p>
+            <p>News & Article</p>
+            <p>Legal Notice</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
